@@ -6,19 +6,19 @@ Maintainer: Markus Pfeiffer <markus.pfeiffer@st-andrews.ac.uk>
 Build-Type: Simple
 Cabal-Version: >= 1.8
 Extra-source-files:
-	gaprts/*.g
+  gaprts/*.g
 Executable idris-gap
   Main-is: Main.hs
   hs-source-dirs: src
 
   Build-depends: idris
-		, base
-		, containers
-		, directory
-		, filepath
-		, haskeline >= 0.7
-		, mtl
-		, transformers
+               , base
+               , containers
+               , directory
+               , filepath
+               , haskeline >= 0.7
+               , mtl
+               , transformers
   other-modules: IRTS.CodegenPHP
   if os(linux)
     cpp-options: -DLINUX
