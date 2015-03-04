@@ -16,12 +16,12 @@ import Paths_idris_gap
 data Opts = Opts { inputs :: [FilePath],
                    output :: FilePath }
 
-showUsage = do putStrLn "Usage: idris-php <ibc-files> [-o <output-file>]"
+showUsage = do putStrLn "Usage: idris-gap <ibc-files> [-o <output-file>]"
                exitWith ExitSuccess
 
 getOpts :: IO Opts
 getOpts = do xs <- getArgs
-             return $ process (Opts [] "a.php") xs
+             return $ process (Opts [] "a.g") xs
   where
     process opts ("-o":o:xs) = process (opts { output = o }) xs
     process opts (x:xs) = process (opts { inputs = x:inputs opts }) xs

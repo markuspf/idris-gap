@@ -19,7 +19,7 @@ Executable idris-gap
                , haskeline >= 0.7
                , mtl
                , transformers
-  other-modules: IRTS.CodegenPHP
+  other-modules: IRTS.CodegenGAP
   if os(linux)
     cpp-options: -DLINUX
     build-depends: unix < 2.8
