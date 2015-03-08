@@ -8,4 +8,4 @@ pythag max = [(x, y, z) | z <- [1..max], y <- [1..z], x <- [1..y],
 -- If you use higer numbers here, you'll quite certainly
 -- run into GAP's recursion depth trap.
 main : IO ()
-main = print (pythag 10)
+main = print (pythag 60)
