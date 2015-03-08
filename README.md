@@ -34,3 +34,15 @@ The following is a list of things I might like to implement:
  * Compiling to GAP kernel code
  * Compiling to slightly more idiomatic GAP code
  * Proper indentation of the generated GAP code 
+ * Foreign function calls
+
+How slow is it?
+---------------
+
+Probably very. Here are some non-numbers (measured on my i5 laptop):
+
+| Backend | 10 | 50 | 100 | 500 |
+| ------- | -- | -- | --- | --- |
+| C       | 0.00u + 0.01s | 0.04u+0.02s | 0.25u + 0.11s | 30.27u + 10.62s |
+| PHP     | 0.00u + 0.01s | 0.55u + 0.01s | 4.99u + 0.2s  | 632.58u + 129.48s |
+| GAP     | 1.53u + 0.28s | 1.72u + 0.29s | 2.85u + 0.24s | 137.98u + 0.27s | 
