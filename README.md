@@ -28,4 +28,9 @@ Contributions?
 
 Of course you are welcome to muck about with the code. Let me know if you find any of this 
 interesting at all.
- 
+
+The following is a list of things I might like to implement:
+ * Tail call optimisation
+ * Compiling to GAP kernel code
+ * Compiling to slightly more idiomatic GAP code
+ * Proper indentation of the generated GAP code 
