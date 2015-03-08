@@ -1,5 +1,5 @@
 Idris to GAP back end
----------------------
+=====================
 
 Inspired by Edwin Brady's excellent [PHP backend](https://github.com/edwinb/idris/php) for
 his even more excellent language [Idris](http://www.idris-lang.org).
@@ -8,7 +8,7 @@ This Idris code to [GAP](https://github.com/gap-system/gap) code at the moment. 
 direct compilation to GAP kernel code.
 
 Does it work?
--------------
+=============
 
 It does work in that it generates code runnable in GAP. It is certainly a very bad
 idea to generate GAP code to be interpreted by the GAP runtime for several reasons. One
@@ -23,7 +23,7 @@ To run the output of this code generator, you will need a reasonably recent vers
 ```
 
 Why?
-----
+====
 
 Because I can. Also, because I wanted to learn how to write an idris backend. I am considering
 making a gap-runtime backend that generates GAP kernel code. Together with Idris' excellent
@@ -31,7 +31,7 @@ FFI work it'd be possible to interact between Idris and GAP, experiment with the
 type systems, etc.
 
 Contributions?
---------------
+==============
 
 Of course you are welcome to muck about with the code. Let me know if you find any of this 
 interesting at all.
@@ -44,12 +44,15 @@ The following is a list of things I might like to implement:
  * Foreign function calls
 
 How slow is it?
----------------
+===============
 
 Probably very. Here are some non-numbers (measured on my i5 laptop):
 
-| Backend | 10 | 50 | 100 | 500 |
-| ------- | -- | -- | --- | --- |
-| C       | 0.00u + 0.01s | 0.04u+0.02s | 0.25u + 0.11s | 30.27u + 10.62s |
-| PHP     | 0.00u + 0.01s | 0.55u + 0.01s | 4.99u + 0.2s  | 632.58u + 129.48s |
-| GAP     | 1.53u + 0.28s | 1.72u + 0.29s | 2.85u + 0.24s | 137.98u + 0.27s | 
+```
+ | Backend |            10 |            50 |           100 |               500 |
+ | ------- | ------------- | ------------- | ------------- | ----------------- |
+ | C       | 0.00u + 0.01s | 0.04u + 0.02s | 0.25u + 0.11s |  30.27u +  10.62s |
+ | PHP     | 0.00u + 0.01s | 0.55u + 0.01s | 4.99u + 0.20s | 632.58u + 129.48s |
+ | GAP     | 1.53u + 0.28s | 1.72u + 0.29s | 2.85u + 0.24s | 137.98u +   0.27s |
+``` 
+
