@@ -15,6 +15,13 @@ idea to generate GAP code to be interpreted by the GAP runtime for several reaso
 of those reasons is that at this point one of the most expensive operations in GAP is to call
 functions.
 
+To run the output of this code generator, you will need a reasonably recent version of
+[GAP](https://github.com/gap-system/gap). I ran the produced code by using 
+```
+# idris --codegen gap pythag.idr -o pythag.g
+# gap -r pythag.g
+```
+
 Why?
 ----
 
