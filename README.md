@@ -42,7 +42,8 @@ The following is a list of things I might like to implement:
  * Compiling to slightly more idiomatic GAP code
  * Proper indentation of the generated GAP code 
  * Foreign function calls
-
+ * Complete support for Idris' primitives 
+ 
 How slow is it?
 ===============
 
