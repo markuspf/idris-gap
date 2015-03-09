@@ -47,7 +47,7 @@ The following is a list of things I might like to implement:
 How slow is it?
 ===============
 
-Probably very. Here are some non-numbers (measured on my i5 laptop):
+Probably very. Here are some non-numbers (measured on my i5 laptop) for the pythag.idr example:
 
 ```
  | Backend |            10 |            50 |           100 |               500 |
@@ -56,4 +56,5 @@ Probably very. Here are some non-numbers (measured on my i5 laptop):
  | PHP     | 0.00u + 0.01s | 0.55u + 0.01s | 4.99u + 0.20s | 632.58u + 129.48s |
  | GAP     | 1.53u + 0.28s | 1.72u + 0.29s | 2.85u + 0.24s | 137.98u +   0.27s |
 ``` 
+As a comparison: The natural GAP code that one would use to compute these pythagorean triples takes 1.7 seconds for 500.
 
