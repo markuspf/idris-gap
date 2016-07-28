@@ -7,7 +7,7 @@ Build-Type: Simple
 Cabal-Version: >= 1.8
 Extra-source-files:
   gaprts/*.g
-Executable idris-gap
+Executable idris-codegen-gap
   Main-is: Main.hs
   hs-source-dirs: src
 
@@ -19,6 +19,7 @@ Executable idris-gap
                , haskeline >= 0.7
                , mtl
                , transformers
+               , text >= 1.2
   other-modules: IRTS.CodegenGAP
   if os(linux)
     cpp-options: -DLINUX
@@ -35,5 +36,6 @@ Executable idris-gap
   if os(windows)
     cpp-options: -DWINDOWS
     build-depends: Win32 < 2.4
+
   ghc-prof-options: -auto-all -caf-all
   ghc-options: -threaded -rtsopts -funbox-strict-fields
